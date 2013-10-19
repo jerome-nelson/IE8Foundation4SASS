@@ -1,0 +1,23 @@
+//Taken from Foundation 4 _settings.scss. Put this file and ie-8-and-down.scss into the SASS Directory of your Foundation 4 install
+//@import '_settings';
+
+//Internet Explorer Size Settings
+$full-width: 1020px;
+
+$size-full: 100%;
+$size-1: 8.33333%;
+$size-2: 16.66667%;
+$size-3: 25%;
+$size-4: 33.33333%;
+$size-5: 41.66667%;
+$size-6: 50%;
+$size-7: 58.33333%;
+$size-8: 66.66667%;
+$size-9: 75%;
+$size-10: 83.33333%;
+$size-11: 91.66667%;
+
+//Used to extend where needed
+%left {
+	float: left;
+}

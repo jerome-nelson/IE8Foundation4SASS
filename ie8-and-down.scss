@@ -1,0 +1,163 @@
+@import 'settings';
+@import 'ie-settings';
+
+/* The Grid ---------------------- */
+.lt-ie9 {
+	.row {
+		
+		width: $full-width; 
+		max-width: $size-full; 
+		min-width: $small-screen; 
+		margin: 0 auto;
+		
+		.large-offset-1 {
+			margin-left: $size-1;
+		}
+		.large-offset-2 {
+			margin-left: $size-2;		
+		}
+		.large-offset-3 { 
+			margin-left: $size-3; 
+		}
+		.large-offset-4 { 
+			margin-left: $size-4; 
+		}
+		.large-offset-5 { 
+			margin-left: $size-5; 
+		}
+		.large-offset-6 { 
+			margin-left: $size-6; 
+		}
+		.large-offset-7 { 
+			margin-left: $size-7; 
+		}
+		.large-offset-8 { 
+			margin-left: $size-8; 
+		}
+		.large-offset-9 { 
+			margin-left: $size-9; 
+		}
+		.large-offset-10 { 
+			margin-left: $size-10; 
+		}
+		.row {
+			width: auto; 
+			max-width: none; 
+			min-width: 0; 
+			margin: 0 -15px;
+			
+			&.large-collapse { 
+				margin: 0; 
+			}
+		}
+		&.large-collapse .columns, &.large-collapse .column {
+			padding: 0;
+		}
+		*zoom: 1;
+		&:before,&:after {
+			content: " "; 
+			display: table;		
+		}
+		&:after {
+			clear: both;		
+		}
+	}
+	.column,.columns {
+		@extend %left;
+		min-height: 1px; 
+		padding: 0 15px; 
+		position: relative;
+	}
+	.column.large-centered, .columns.large-centered { 
+		float: none; 
+		margin: 0 auto; 
+	}
+	[class*="column"] + [class*="column"] {
+		&:last-child {
+			float: right;		
+		}
+		&.end {
+			@extend %left;
+		}
+	}
+	.small-1 {
+		&,.row & {
+			width: $size-1;
+		}
+	}
+	.small-2 {
+		&,.row & {
+			width: $size-2;
+		}
+	}
+	.small-3 {
+		&,.row & {
+			width: $size-3;
+		}
+	}
+	.small-4 {
+		&,.row & {
+			width: $size-4;
+		}
+	}
+	.small-5 {
+		&,.row & {
+			width: $size-5;
+		}
+	}
+	.small-6 {
+		&,.row & {
+			width: $size-6;
+		}
+	}
+	.small-7 {
+		&,.row & {
+			width: $size-7;
+		}
+	}
+	.small-8 {
+		&,.row & {
+			width: $size-8;
+		}
+	}
+	.small-9 {
+		&,.row & {
+			width: $size-9;
+		}
+	}
+	.small-10 {
+		&,.row & {
+			width: $size-10;
+		}
+	}
+	.small-11 {
+		&,.row & {
+			width: $size-11;
+		}
+	}
+	.small-12 {
+		&,.row & {
+			width: $size-full;
+		}
+	}
+	
+	.pull-2 { right: $size-2; }
+	.pull-3 { right: $size-3; }
+	.pull-4 { right: $size-4; }
+	.pull-5 { right: $size-5; }
+	.pull-6 { right: $size-6; }
+	.pull-7 { right: $size-7; }
+	.pull-8 { right: $size-8; }
+	.pull-9 { right: $size-9; }
+	.pull-10 { right: $size-10; }
+
+	.push-2 { left: $size-2; }
+	.push-3 { left: $size-3; }
+	.push-4 { left: $size-4; }
+	.push-5 { left: $size-5; }
+	.push-6 { left: $size-6; }
+	.push-7 { left: $size-7; }
+	.push-8 { left: $size-8; }
+	.push-9 { left: $size-9; }
+	.push-10 { left: $size-10; }
+}
